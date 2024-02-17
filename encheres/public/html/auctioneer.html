@@ -1,0 +1,27 @@
+<!-- auctioneer.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Enchères - Être le commissaire-priseur</title>
+    <link href="../style/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <h1>Commissaire-priseur</h1>
+    <div id = "message_accueil">
+        <p>Vous êtes le commissaire priseur</p>
+    </div>
+    <div id = "menu">
+        <label for="item">Objet à mettre aux enchères :</label>
+        <input type="text" id="item" name="item" placeholder="description">
+
+        <label for="price">Prix de départ :</label>
+        <input type="number" id="price" name="price" min="10" value="10">
+
+        <label for="montant_enchere">Montant de l'enchère 10€</label>
+        <button id = "start"> <img src="../images/start-button.png" alt="start"> </button>
+        <button id = "stop"> <img src="../images/law.png" alt="stop"> </button>
+    </div>
+    <a href="/">Retour à la page d'accueil</a>
+</body>
