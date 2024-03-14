@@ -1,0 +1,29 @@
+<!-- bidder.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Enchères - Participer aux enchères</title>
+    <link href="./style/style.css" rel="stylesheet" type="text/css">
+    <script src="/socket.io/socket.io.js"></script>
+    <!-- <script src="../scripts/bidder.js" type="module" defer></script> -->
+</head>
+
+<body>
+    <h1>Enchérisseur</h1>
+    <div id = "message_accueil">
+        <p>Bienvenue</p>
+    </div>
+    <div id = "menu">
+        <label for="item">Mis aux enchères : </label>
+        <p id="prix_actuel">Prix actuel : <span id="euros">-</span>€</p>
+        <div id="encheres_possibles" style="display: none;">
+            <label for="price">Enchères possibles : </label>
+            <button id="bid10">5€</button>
+            <button id="bid20">10€</button>
+            <button id="bid30">100€</button>
+        </div>
+    </div>
+    <a href="/">Retour à la page d'accueil</a>
+</body>
+</html>

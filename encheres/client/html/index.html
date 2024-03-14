@@ -6,7 +6,10 @@
 	<meta charset="UTF-8"/>
 	<title>PAGE TITLE</title>
 	<meta name="author" content="your name"/>
-	<link href="./style/style.css" rel="stylesheet" type="text/css">
+	<link href="../style/style.css" rel="stylesheet" type="text/css">
+
+	<script src="/socket.io/socket.io.js"></script>
+    <script src="../scripts/index.js" type="module" defer></script>
 
 </head>
 
@@ -20,9 +23,9 @@
 	<p> Bonne visite ! </p>
 	<div id="menu">
 		<ul>
-			<li><a href="/auctioneer">Etre le commissaire priseur</a></li>
-			<li><a href="/bidder">Participer aux enchères</a></li>
-			<li><a href="/about">Info sur l'application</a></li>
+			<li><a id="auctioneer" href="/auctioneer">Etre le commissaire priseur</a></li>
+			<li><a id="bidder" href="/bidder">Participer aux enchères</a></li>
+			<li><a id="about" href="/about">Info sur l'application</a></li>
 		</ul>
 	</div>
 

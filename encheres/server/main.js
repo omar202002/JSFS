@@ -7,11 +7,12 @@ const server = http.createServer(
 	(request, response) => new RequestController(request, response).handleRequest()
 );
 
-/*
+
 const io = new ServerIO(server);
 const ioController = new IOController(io);
-io.on('connection', socket => ioController.registerSocket(socket) );
-*/
+io.on('connection', ioController.registerSocket.bind(ioController) );
+// io.on('connection', socket => ioController.registerSocket(socket) );
+
 
 
 server.listen(8080);

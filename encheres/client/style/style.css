@@ -1,0 +1,117 @@
+/* style.css */
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  background-image: url('../images/background_body.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+h1 {
+  color: #d1e7e5;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 3em;
+  @supports (background-clip: text) or (-webkit-background-clip: text) {
+    background-image: 
+      url('../images/h1.png');
+    background-size: 110% auto;
+    background-position: center;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+}
+
+p {
+  color: #d1e7e5;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+div {
+  margin: 10px;
+}
+
+#menu {
+  border: 5px solid var(--border-color);
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+#message_accueil {
+  color: #d1e7e5;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+label {
+  color: #d1e7e5;
+}
+
+input[type="text"], input[type="number"] {
+  padding: 10px;
+  border: 1px solid #bdc3c7;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+:root {
+  --border-color: rgb(168, 163, 163);
+  --hover-color: rgb(255, 215, 137);
+}
+
+#menu ul li {
+  border: 2px solid var(--border-color);
+  padding: 10px;
+  width: 80%;
+  margin: 10px auto;
+  border-radius: 10px;
+  transition: border-color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#menu ul li:hover {
+  border-color: var(--hover-color);
+  transform: scale(1.1);
+  opacity: 1;
+}
